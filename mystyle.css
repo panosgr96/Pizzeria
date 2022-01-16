@@ -1,0 +1,543 @@
+/*/////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////<!-------------mystyle.css------------->//////////////////
+///////////////////////////////////////////////////////////////////////////////////////*/
+
+
+::selection {
+    color: white;
+    background: #00cc44;
+}
+
+.bigLogoId:hover {
+    opacity: 1;
+}
+.cardID {
+    width: 50px; 
+    height: 20px;
+}
+
+#comment {
+    width: 540px; 
+    height: 150px
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.hover:hover {
+    opacity: 0.8;
+}
+
+input[type=text] {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #009933;
+    color: #282828;
+}
+
+input[type=text]:focus {
+    border-color:#00cc44;
+    box-shadow: 0 0 5px rgba(0, 255, 0, 1);
+    border: 1px solid rgba(0, 255, 0, 1);
+}
+
+select {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #009933;
+    color:green;
+    border-radius: 0 18px;
+    padding: 5px;
+}
+
+select:focus {
+    border-color:#00cc44;
+    box-shadow: 0 0 5px rgba(0, 255, 0, 1);
+    border: 1px solid rgba(0, 255, 0, 1);
+}
+
+textarea {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #009933;
+}
+
+textarea:focus {
+    border-color:#00cc44;
+    box-shadow: 0 0 5px rgba(0, 255, 0, 1);
+    border: 1px solid rgba(0, 255, 0, 1);
+}
+
+input[type=checkbox]{
+    cursor: pointer;
+    width: 17px; height: 17px;
+    border: 1px solid #aaa;
+    background: #f8f8f8;
+    //box-shadow: inset 0 1px 1px rgba(0, 200, 0, 1)
+}
+
+input[type=checkbox]:checked {
+    border-color:#00cc44;
+    box-shadow: 0 0 5px rgba(0, 255, 0, 1);
+    border: solid rgba(0, 255, 0, 1);
+    border-radius: 10px 0;
+}
+input[type=checkbox]:onfocus {
+    border-color:#00cc44;
+    box-shadow: 0 0 5px rgba(0, 255, 0, 1);
+    border: 1px solid rgba(0, 255, 0, 1);
+}
+    
+#logo {
+    width: 300px;
+    height: 90px;
+}
+
+.mainFrame {
+    background-image: url("img/mainframe.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fonts {
+    font-family: "arial";
+    font-size: 90%;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+.bigLogo{
+    display:block;
+    position:absolute;
+    top:0;
+    left:130px;
+    }
+
+#container {
+  height: 700px;
+  width: 1400px;
+  position: relative;
+}
+#image {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#order {
+  position: relative;
+  bottom: 190px;
+  border: none;
+  display: inline-block;
+}
+
+#order2 {
+  position: relative;
+  bottom: 50px;
+  left: 90px;
+  border: none;
+  display: inline-block;
+}
+
+.ccheckBoxes{
+    position: absolute;
+    left: 600px;
+    top: 150px;
+}
+
+.ingMoney{
+    margin-right: 5px;
+}
+
+.sumField{
+    padding:5px; 
+    border:2px solid white; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#outer{
+    position: relative;
+    float :left;
+    left: 82%;
+}
+
+.plate-layer{
+   
+   position: absolute;
+   z-index: -7;
+}
+
+.dough-layer{
+   position: absolute;
+   z-index: -6;
+   width: 350px;
+   height: 352px;
+   margin: 0 auto 30px;
+   padding-left: 6px;
+   padding-top: 12px;
+   background: transparent
+}
+
+.sauce-layer{
+   position: absolute;
+   z-index: -5;
+   width: 350px;
+   height: 352px;
+   margin: 0 auto 30px;
+   padding-left: 6px;
+   padding-top: 12px;
+   background: transparent
+}
+
+.cheese-layer{
+   position: absolute;
+   z-index: -4;
+   width: 350px;
+   height: 352px;
+   margin: 0 auto 30px;
+   padding-left: 6px;
+   padding-top: 12px;
+   background: transparent
+}
+.top-layers1{
+   position: absolute;
+   z-index:-3;
+   width: 350px;
+   height: 352px;
+   margin: 0 auto 30px;
+   padding-left: 6px;
+   padding-top: 12px;
+   background: transparent
+}
+.top-layers2{
+   position: absolute;
+   z-index:-2;
+   width: 350px;
+   height: 352px;
+   margin: 0 auto 30px;
+   padding-left: 6px;
+   padding-top: 12px;
+   background: transparent
+}
+.top-layers3{
+   position: absolute;
+   z-index:-1;
+   width: 350px;
+   height: 352px;
+   margin: 0 auto 30px;
+   padding-left: 6px;
+   padding-top: 12px;
+   background: transparent
+}
+
+.top-layers4{
+   position: absolute;
+   z-index:-1;
+   width: 350px;
+   height: 352px;
+   margin: 0 auto 30px;
+   padding-left: 6px;
+   padding-top: 12px;
+   background: transparent
+}
+
+.top-layers5{
+   position: absolute;
+   z-index:-1;
+   width: 350px;
+   height: 352px;
+   margin: 0 auto 30px;
+   padding-left: 6px;
+   padding-top: 12px;
+   background: transparent
+}
+
+.container1{
+    position: relative;
+    width: 350px;
+    height: 352px;
+    margin: 0 auto 30px;
+    padding-left: 6px;
+    padding-top: 12px;
+    background: transparent
+    
+}
+
+.total {
+    border: none; 
+    outline:0; 
+    height:30px; 
+    width: 35px; 
+    font-size: 27px;
+    font-style:italic;
+    color: red;
+}
+
+.forwardButton {
+  display: inline-block;
+  border-radius: 8px;
+  background-color: green;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 14px;
+  width: 130px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  -webkit-user-select: none;
+  outline: none;
+}
+
+.forwardButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.forwardButton span:after {
+  content: '>>';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -32px;
+  transition: 0.5s;
+}
+
+.forwardButton:hover span {
+  padding-right: 37px;
+}
+
+.forwardButton:hover {
+  background-color: #00cc44;
+}
+
+.forwardButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.forwardButton:active {
+    background-color: green;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 1)
+    
+}
+
+.backwardButton {
+  display: inline-block;
+  border-radius: 8px;
+  background-color: green;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 14px;
+  width: 130px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  -webkit-user-select: none;
+  outline: none;
+}
+
+.backwardButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.backwardButton span:after {
+  content: '<<';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -32px;
+  transition: 0.5s;
+}
+
+.backwardButton:hover span {
+  padding-left: 37px;
+}
+
+.backwardButton:hover {
+  background-color: #00cc44;
+}
+
+.backwardButton:hover span:after {
+  opacity: 1;
+  left: 0;
+}
+
+.backwardButton:active {
+    background-color: green;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 1)
+    
+}
+
+.LotteryButton {
+  display: inline-block;
+  border-radius: 8px;
+  background-color: green;
+  border: none;
+  color: gold;
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
+  width: 160px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  -webkit-border-radius: 1000px;
+  -webkit-border-top-left-radius: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  -moz-border-radius: 1000px;
+  -moz-border-radius-topleft: 8px;
+  -moz-border-radius-bottomright: 8px;
+  border-radius: 1000px;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  -webkit-user-select: none;
+  outline: none;
+}
+
+.LotteryButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.LotteryButton span:after {
+  content: '';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -32px;
+  transition: 0.5s;
+}
+
+.LotteryButton:hover span {
+  padding-left: 20px;
+}
+
+.LotteryButton:hover {
+  background-color: gray;
+}
+
+.LotteryButton:hover span:after {
+  opacity: 1;
+  left: 0;
+}
+
+.LotteryButton:active {
+    background-color: green;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 1)      
+}
+
+.LotteryDisable {
+  display: inline-block;
+  border-radius: 8px;
+  background-color: #074500;
+  border: none;
+  color: gold;
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
+  width: 160px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  -webkit-border-radius: 1000px;
+  -webkit-border-top-left-radius: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  -moz-border-radius: 1000px;
+  -moz-border-radius-topleft: 8px;
+  -moz-border-radius-bottomright: 8px;
+  border-radius: 1000px;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  -webkit-user-select: none;
+}
+
+.randomButton {
+  display: inline-block;
+  border-radius: 8px;
+  background-color: green;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 14px;
+  width: 130px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  -webkit-border-radius: 1000px;
+  -webkit-border-top-left-radius: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  -moz-border-radius: 1000px;
+  -moz-border-radius-topleft: 8px;
+  -moz-border-radius-bottomright: 8px;
+  border-radius: 1000px;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  -webkit-user-select: none;
+  outline: none;
+}
+
+.randomButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.randomButton span:after {
+  font-size: 38px;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  transition: 0.5s;
+}
+
+.randomButton:hover {
+  background-color: #00cc44;
+}
+
+.randomButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.randomButton:active {
+    background-color: green;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 1)   
+}

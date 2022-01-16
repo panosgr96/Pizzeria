@@ -1,0 +1,467 @@
+﻿<!--////////////////////////////////////////////////////////////////////////////////////////
+    ///////////////////////-------------page2.html-------------///////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pizza</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <script src="http://maps.googleapis.com/maps/api/js"></script> <!--G Maps-->
+    <script src="myjs.js"></script>
+</head>
+<body onload=" Intpage(); delivery();">
+
+    <!--Hidden-->
+    <input type="hidden" id="confirmMessage" value="Η παραγγελία σας καταχωρήθηκε και σύντομα θα αποσταλεί!">
+
+    <!--Cut-->
+    <div>
+        <img src="img/cut.jpg" width="100%" height="100%">
+    </div>
+
+    <!--Header--><!--Navigation Menu-->
+    <header class="mainFrame">
+        <table width="100%" height="100%" align="center">
+            <tr>
+                <td>
+                    <nav class="fonts">
+                        <table width="55%" height="100%" align="center" class="tableNav">
+                            <tr align="center">
+                                <td>
+                                    <a href="page1.html" class="hover"><img src="img/minihome.jpg" width="20px" height="20px"></a> <br>
+                                    <a href="page1.html" class="hover"><font color="white" size="2">Αρχική</font></a>
+                                </td>
+                                <td>
+                                    <a href="page2.html" class="hover"><img src="img/slice.jpg" width="20px" height="20px"></a> <br>
+                                    <a href="page2.html" class="hover"><font color="white" size="2">Παραγγελία</font></a>
+                                </td>
+                                <td>
+                                    <a href="page1Inc.html" class="hover"><img src="img/inc.jpg" width="20px" height="20px"></a> <br>
+                                    <a href="page1Inc.html" class="hover"><font color="white" size="2">Εταιρεία</font></a>
+                                </td>
+                                <td align="right">
+                                    <img src="img/call.jpg" width="20px" height="20px">
+                                    <font color="white" size="2">210-<font color="orange" size="3"><b>8112000</b></font></font></a>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </nav>
+
+                </td>
+            </tr>
+        </table>
+    </header>
+
+    <!--Pizza Logo-->
+    <div class="bigLogo">
+        <a href="page1.html"><img src="img/home.jpg" /></a>
+    </div>
+
+    <!--Cut-->
+    <div>
+        <img src="img/cut.jpg" width="100%" height="100%">
+    </div>
+
+    <!--Main body-->
+    <section class="fonts">
+
+        <!--Order image-->
+        <div align="center">
+            <img src="img/orderbg.jpg" align="center" width="50%" height="300px">
+        </div><br />       <br />
+
+        <!--Side sales image-->
+        <aside>
+            <div id="outer">
+                <img src="img/combine-with.jpg" style=" width: auto; height: auto;">
+            </div>
+        </aside>
+
+        <!--1rst phase-->
+        <div>
+            <form name="Form1" id="Form1">
+                <table align="center" width="50%" height="300px">
+                    <tr>
+
+                        <!--Cancel-->
+                        <td align="right" colspan="2">
+                            <a href="page1.html"><img src="img/cancel.png" width="25px" height="25px" /></a>
+
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <!--Title-->
+                        <td colspan="2" align="center">
+                            <font color="green" size="6"><b>Φτιάξε την δική σου πίτσα!</b></font><br />
+                            <font color="green" size="2"><b>...εύκολα και γρήγορα!</b></font><br /><br /><br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <!--Pizza Menu-->
+                            <div class="checkBoxes" id="ManualPizza">
+                                <font color="green" size="3"><b>Ζύμη</b></font><br />
+                                <input type="checkbox" class="checkBox" checked value="3" name="Classic">
+                                <font color="green" size="2">Κλασσική</font><br />
+                                <input type="checkbox" class="checkBox" onclick="delivery();" value="1" name="Big">
+                                <font color="red" size="2" class="ingMoney"><b>1€</b></font>
+                                <font color="green" size="2">Αφράτη</font><br /><br />
+
+                                <font color="green" size="3"><b>Κυρια Υλικά</b></font><br />
+                                <input type="checkbox" class="checkBox" onclick="delivery();" id="myCheck" value="2" name="Cheese">
+                                <font color="red" size="2" class="ingMoney"><b>2€</b></font>
+                                <font color="green" size="2">Γκούντα</font><br />
+                                <input type="checkbox" class="checkBox" onclick="delivery();" value="1" name="Salami">
+                                <font color="red" size="2" class="ingMoney"><b>1€</b></font>
+                                <font color="green" size="2">Σαλάμι Αέρος</font><br />
+                                <input type="checkbox" class="checkBox" onclick="delivery();" value="1" name="Bacon">
+                                <font color="red" size="2" class="ingMoney"><b>1€</b></font>
+                                <font color="green" size="2">Bacon</font><br />
+                                <input type="checkbox" class="checkBox" value="2" name="checkb" onclick="delivery();">
+                                <font color="red" size="2" class="ingMoney"><b>2€</b></font>
+                                <font color="green" size="2">BBQ Sauce</font><br /><br />
+
+
+                                <font color="green" size="3"><b>Λαχανικά</b></font><br />
+                                <input type="checkbox" class="checkBox" onclick="delivery();" value="1" name="Shrooms">
+                                <font color="red" size="2" class="ingMoney"><b>1€</b></font>
+                                <font color="green" size="2">Φρέσκα Μανιτάρια</font><br />
+                                <input type="checkbox" class="checkBox" onclick="delivery();" value="1" name="Peppers">
+                                <font color="red" size="2" class="ingMoney"><b>1€</b></font>
+                                <font color="green" size="2">Φρέσκιες Πιπεριές</font><br />
+                                <input type="checkbox" class="checkBox" onclick="delivery();" value="1" name="Tomatoes">
+                                <font color="red" size="2" class="ingMoney"><b>1€</b></font>
+                                <font color="green" size="2">Φρέσκια Ντομάτα</font><br />
+                            </div>
+
+                            <!--Random Pizza-->
+                            <br /><br /><br />
+                            <button type="button" class="randomButton" id="lucky" onclick="RandomPizza()"><span>Τυχαία</span></button>
+                        </td>
+
+                        <!--Pizza Generator-->
+                        <td>
+                            <div>
+
+                                <div class="container1">
+                                    <!--Low Layers-->
+                                    <div class="plate-layer">
+                                        <img src="img/plate.png" id="plate-layer">
+                                    </div>
+                                    <div class="dough-layer">
+                                        <img src="img/dough.png" id="dough-layer">
+                                    </div>
+                                    <div class="sauce-layer">
+                                        <img src="img/sauce.png" id="sauce-layer">
+                                    </div>
+                                    <div class="cheese-layer">
+                                        <img src="img/cheese.png" id="cheese-layer">
+                                    </div>
+                                    <!--TopLayers-->
+                                    <div class="top-layers1">
+                                        <img src="img/tomatoes.png" id="top-layers1">
+                                    </div>
+                                    <div class="top-layers2">
+                                        <img src="img/shrooms.png" id="top-layers2">
+                                    </div>
+                                    <div class="top-layers3">
+                                        <img src="img/salami.png" id="top-layers3">
+                                    </div>
+                                    <div class="top-layers4">
+                                        <img src="img/peppers.png" id="top-layers4">
+                                    </div>
+                                    <div class="top-layers5">
+                                        <img src="img/bacon.png" id="top-layers5">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <br /><br /><br />
+
+                            <!--Pizzas Number-->
+                            <font color="green" size="3"><b>Πλήθος Τεμαχίων</b></font>
+
+                            <select onchange="delivery();" id="mySelect">
+                                <option value="1">1</option>
+                                <option value="2" ">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </td>
+
+                        <!--Express-->
+                        <td>
+                            <br /><br /><br />
+
+                            <font color="green" size="3"><b>Express Αποστολή</b></font>
+                            <input type="checkbox" onclick="delivery()" value="5" id="express">
+                        </td>
+                    </tr>
+
+                    <!--Delivery Cost-->
+                    <tr>
+                        <td align="right">
+                            <br /><br />
+                            <font color="green" size="3"><b>Έξοδα Αποστολής:</b></font>
+                            <input name="ttld" value=- class="total" style="text-align:center;" readonly>
+                            <font color="green" size="5"><b>€</b></font><br />
+                        </td>
+
+                        <!--Pizza Cost-->
+                        <td align="center">
+                            <br /><br />
+                            <font color="green" size="3"><b>Συνολικό Ποσό</b></font>
+                            <input name="ttl" value=- class="total" style="text-align:center;" readonly>
+                            <font color="green" size="5"><b>€</b></font><br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td align="center">
+
+                            <!--Next Form-->
+                            <br /><br />
+                            <button class="forwardButton" id="next1" style="vertical-align:middle" onclick="NextPage('Form2')"><span>Επόμενο </span></button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <!--2rst phase-->
+        <form name="Form2" id="Form2">
+
+            <!--Sales image-->
+            <div>
+                <img src="img/sale-more.jpg" width="100%" height="100%">
+            </div>
+            <div>
+
+                <!--Title-->
+                <div align="center">
+                    <font color="green" size="6"><b>Που να παραδώσουμε;</b></font><br />
+                </div>
+
+
+                <table width="50%" height="400px" align="center">
+                    <tr>
+
+                        <!--Title-->
+                        <td>
+                            <font color="green" size="3"><b>Στοιχεία</b></font><br />
+
+                            <!--4x Input Fields-->
+                            <table>
+                                <tr>
+                                    <td align="right"><font color="green" size="2">Όνομα:</font></td>
+                                    <td align="left"><input type="text" name="name" required></td>
+                                </tr>
+                                <tr>
+                                    <td align="right"><font color="green" size="2">Επώνυμο:</font></td>
+                                    <td align="left"><input type="text" name="sname" required></td>
+                                </tr>
+                                <tr>
+                                    <td align="right"><font color="green" size="2">Τηλέφωνο:</font></td>
+                                    <td align="left"><input type="text" name="tel" required placeholder="210-"></td>
+                                </tr>
+                                <tr>
+                                    <td align="right"><font color="green" size="2">Email:</font></td>
+                                    <td align="left"><input type="text" name="email" required placeholder="someone@mail.com"></td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <!--Title-->
+                        <td align="center">
+                            <font color="green" size="3"><b>Παράδωση</b></font><br />
+
+                            <!--4x Input Fields-->
+                            <table>
+                                <tr>
+                                    <td align="right"><font color="green" size="2">Οδός:</font><br /></td>
+                                    <td align="left"><input type="text" name="address" required></td>
+                                </tr>
+                                <tr>
+                                    <td align="right"><font color="green" size="2">Αριθμός:</font></td>
+                                    <td align="left"><input type="text" name="num" required></td>
+                                </tr>
+                                <tr>
+                                    <td align="right"><font color="green" size="2">ΤΚ:</font></td>
+                                    <td align="left"><input type="text" name="tk" required placeholder="210-"></td>
+                                </tr>
+                                <tr>
+                                    <td align="right"><font color="green" size="2">Περιοχή:</font></td>
+                                    <td align="left"><input type="text" name="region" required></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <!--Google Maps-->
+                        <td align="center" colspan="2" >
+                            <div><font color="green" size="5" style="-webkit-user-select: none;"><b>Διπλό κλικ εδω για Χάρτη!</b></font><br /></div>
+                            <div id="googleMap" style="width:500px;height:380px;"></div>
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <!--Textfield-->
+                        <td align="center" colspan="2">
+                            <textarea rows="7" cols="55" placeholder="Σχόλια σχετικά με την αποστολή εδώ..."></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+
+                        <!--Previous Form-->
+                        <td align="center">
+                            <button class="backwardButton" style="vertical-align:middle" onclick="PreviousPage('Form1')"><span>Πίσω</span></button>
+                        </td>
+
+                        <!--Next Form-->
+                        <td align="center">
+                            <button class="forwardButton" style="vertical-align:middle" onclick="Formvalidate('Form2', 'Form3');"><span>Επόμενο </span></button>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+        </form>
+
+        <!--3rst phase-->
+        <form name="Form3" id="Form3">
+
+            <!--Sales image-->
+            <div>
+                <img src="img/sale-more-more-more.jpg" width="100%" height="100%">
+            </div>
+            <div>
+
+                <!--Title-->
+                <div align="center">
+                    <font color="green" size="6"><b>Πλήρωσε και Απόλαυσε!</b></font><br />
+                </div>
+
+                <div>
+
+                    <table width="50%" height="500px" align="center">
+                        <tr>
+
+                            <!--Card-->
+                            <td align="center" rowspan="2">
+                                <font color="green" size="3"><b>Τύπος Κάρτας</b></font><br /><br />
+
+                                <input type="radio" name="card"><font color="green"><b>Visa</b></font> <img src="img/visa.jpg" width="150px" height="40px" /><br />
+                                <input type="radio" name="card" checked><font color="green"><b>Mastercard</b></font> <img src="img/mastercard.jpg" width="130px" height="80px" /><br />
+                                <input type="radio" name="card"><font color="green"><b>Maestro</b></font> <img src="img/maestro.jpg" width="130px" height="80px" /><br />
+                            </td>
+
+                            <!--CardID-->
+                            <td align="center">
+                                <font color="green" size="3"><b>Αριθμός Κάρτας</b></font><br /><br />
+                                <input type="text" name="cardID" maxlength="4" required placeholder="XXXX" class="cardID" onkeypress="return numbersonly(this, event)">
+                                <font>-</font>
+                                <input type="text" name="cardID" maxlength="4" required placeholder="XXXX" class="cardID" onkeypress="return numbersonly(this, event)">
+                                <font>-</font>
+                                <input type="text" name="cardID" maxlength="4" required placeholder="XXXX" class="cardID" onkeypress="return numbersonly(this, event)">
+                                <font>-</font>
+                                <input type="text" name="cardID" maxlength="4" required placeholder="XXXX" class="cardID" onkeypress="return numbersonly(this, event)">
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <!--CardName-->
+                            <td align="center">
+                                <font color="green" size="3"><b>Ονοματεπώνυμο</b></font><br /><br />
+                                <input type="text" name="name" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center"><br /><br />
+
+                                <!--Lottery-->
+                                <div align="center">
+                                    <font color="green" size="5"><b>Εδώ...κερδίζεις σιγουρα!</b></font><br />
+                                </div>
+
+                                <table width="400px" height="200px" align="center" id="lotteryTable">
+                                    <tr>
+                                        <td align="center"><button class="LotteryButton" onclick="LastTotal(this)" style="vertical-align:middle"><span>€</span></button></td>
+                                        <td align="center"><button class="LotteryButton" onclick="LastTotal(this)" style="vertical-align:middle"><span>€</span></button></td>
+                                        <td align="center"><button class="LotteryButton" onclick="LastTotal(this)" style="vertical-align:middle"><span>€</span></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center"><button class="LotteryButton" onclick="LastTotal(this)" style="vertical-align:middle"><span>€</span></button></td>
+                                        <td align="center"><button class="LotteryButton" onclick="LastTotal(this)" style="vertical-align:middle"><span>€</span></button></td>
+                                        <td align="center"><button class="LotteryButton" onclick="LastTotal(this)" style="vertical-align:middle"><span>€</span></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center"><button class="LotteryButton" onclick="LastTotal(this)" style="vertical-align:middle"><span>€</span></button></td>
+                                        <td align="center"><button class="LotteryButton" onclick="LastTotal(this)" style="vertical-align:middle"><span>€</span></button></td>
+                                        <td align="center"><button class="LotteryButton" onclick="LastTotal(this)" style="vertical-align:middle"><span>€</span></button></td>
+                                    </tr>
+                                </table><br /><br />
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <!--TotaltoPay-->
+                            <td align="center" colspan="2">
+                                <font color="green" size="3"><b>Τελικό Ποσό:</b></font>
+                                <input name="lttl" value=- class="total" id="lttl" style="text-align:center;" readonly>
+                                <font color="green" size="5"><b>€</b></font><br />
+                            </td>
+                        </tr>
+
+                        <tr>
+
+                            <!--Previous Form-->
+                            <td align="center">
+                                <button class="backwardButton" style="vertical-align:middle" onclick="PreviousPage('Form2')"><span>Πίσω</span></button>
+                            </td>
+
+                            <!--Next Form-->
+                            <td align="center">
+                                <span class="forwardButton" style="vertical-align:middle" onclick="ValidateForm3('Form3');" ><span>Υποβολή</span></span>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+        </form>
+
+    </section>
+
+    <!--Cut-->
+    <div>
+        <img src="img/cut.jpg" width="100%" height="100%">
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div>
+            <img src="img/footer.jpg" width="100%" height="100%">
+
+            <p align="center">
+                <font color="green">
+                    &copy; 2016 Pizza .All rights reserverd.
+                </font>              
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
